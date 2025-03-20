@@ -14,4 +14,10 @@ public class DecisionResponse {
     private Integer loanAmount;
     private Integer loanPeriod;
     private String errorMessage;
+
+    public void setError(String errorMessage){
+        setLoanAmount(null);
+        setLoanPeriod(null);
+        setErrorMessage(errorMessage);
+    }
 }
